@@ -91,15 +91,24 @@ collectors: {}
   # heartbeat.table: heartbeat
 
 # mysql connection params which build the DATA_SOURCE_NAME env var of the docker container
+#mysql:
+#  db: ""
+#  host: "localhost"
+#  param: ""
+#  pass: "password"
+#  port: 3306
+#  protocol: ""
+#  user: "exporter"
+#  existingSecret: false
+
 mysql:
   db: ""
-  host: "localhost"
+  host: "172.21.73.50"
   param: ""
-  pass: "password"
+  pass: "123456"
   port: 3306
   protocol: ""
-  user: "exporter"
-  existingSecret: false
+  user: "root"
 
 # cloudsqlproxy https://cloud.google.com/sql/docs/mysql/sql-proxy
 cloudsqlproxy:
